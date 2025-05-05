@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Gupta | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/861ab70d64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=change_history" />
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tektur:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-slide {
+            margin-top: 22px;
+            margin-bottom: 30px;
+            width: 400px;
+            height: 430px;
+        }
+        .swiper-pagination {
+            position: relative;
+            margin-top: 10px;
+        }
+        /* .swiper-pagination-bullet-active {
+            background: #6e07f3;
+        } */
+        .swiper-pagination-bullet {
+            background: var(--color1);
+            height: 10px;
+            width: 10px;
+        }
+        .material-symbols-outlined {
+            font-size: 50px;
+            position: relative;
+            top: -5px;
+        }
+        @media (max-width: 768px) {
+            .swiper-slide {
+                width: 220px;
+                padding: 15px;
+            }
+
+            .test_pic img {
+                width: 70px;
+                height: 70px;
+            }
+            .test_logo i {
+                font-size: 25px;
+            }
+            .test_comment {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="home_section">
+        <div class="content">
+            <nav>
+            <div class="nav_full">
+                <div class="nav_logo">
+                    <img src="home_logo.gif" class="logo">
+                </div>
+                <div class="nav_options">
+                    <!-- Desktop Navigation -->
+                    <ul class="desktop_nav">
+                        <li>
+                            <abbr title="About">
+                                <a href="#about_section" class="about">
+                                    <i class="fa-regular fa-circle"></i>
+                                </a>
+                            </abbr>
+                        </li>
+                        <li>
+                            <abbr title="Projects">
+                                <a href="#project_section" class="project">
+                                    <span class="material-symbols-outlined">
+                                    change_history
+                                    </span>
+                                </a>
+                            </abbr>
+                        </li>
+                        <li>
+                            <abbr title="Contacts">
+                                <a href="#contact_section" class="profile">
+                                    <i class="fa-regular fa-square-full"></i>
+                                </a>
+                            </abbr>
+                        </li>
+                    </ul>
+                    <!-- Mobile Navigation -->
+                    <div id="myLinks" class="mobile_nav"> 
+                        <a href="#about_section" class="about">About</a>
+                        <a href="#project_section" class="project">Projects</a>
+                        <a href="#contact_section" class="profile">Say Hello</a>
+                    </div>
+                    <!-- hamburger icon -->
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a> -->
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+        </nav>
+        <div class="main_box">
+                <h2 id="animatedText"><span>D</span>esigner, <span>F</span>rontend <span>D</span>eveloper & <span>P</span>rogrammer</h2>
+                    <!-- <audio id="startAudio" src="start.mp3"></audio>
+                    <audio id="endAudio" src="end.mp3"></audio> -->
+                </div>
+                <div class="home_intro">
+                    <div class="small_text">
+                        <h2 class="home_myname"><span>H</span>i,&nbsp;<br><span>I’</span>m&nbsp;<span>P</span>iyush&nbsp;<span>G</span>upta.&nbsp;<br><span>N</span>ice to meet you.</h2>
+                    </div>
+                    <div class="home_image">
+                        <img src="wasted-squid.gif" class="avatar">
+                    </div>
+                    <!-- <div class="rightBoldText">HOME</div> -->
+                </div>
+                <div class="homepage_button">
+                    <a href="Piyush_Gupta_Resume.pdf" target="_blank">
+                        <div class="download_cv"><button class='glowing-btn cv_button soundButton'  data-sound="click_sound.wav"><span class='glowing-txt'>R<span class='faulty-letter'>E</span>SUME</span></button></div>
+                    </a>
+
+                <!-- <div class="down_intro_cv">
+                    <div class="intro">
+                        Hi, I am an undergraduate BTech student in my third year of college. I am a programmer and web developer with intermediate and proficient skills. I believe in a simplistic approach to coding and designing websites. I'm quietly confident, naturally curious, and always working on improving my skills.
+                    </div> 
+                    
+                </div> -->
+                <div class="play glowing-btn" id="playButton" data-sound="sg_tone.mp3"><i class="fa-solid fa-play"></i></div>
+                </div>
+                
+                
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="second_box" id="about_section">
+        <div class="skills">
+            <div class="skills_head">
+                <h2 class="heading_of_skills"><span class="skills_S">S</span>kills</h2>
+                <img src="second_girl.gif" class="second_girl">
+            </div>
+            <div class="line">
+            </div>
+            <div class="players row1">
+                <div class="eachplayer">
+                    <h3 class="playername">Player 3 (IOT)</h3>
+                    <div class="player_skill">
+                        <li>Arduino Uno</li>
+                        <li>Thingspeak/Blynk</li>
+                        <li>ESP32/8266</li>
+                    </div>
+                </div>
+                <div class="eachplayer">
+                    <h3 class="playername">Player 1 (Developer)</h3>
+                    <div class="player_skill">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </div>
+                </div>
+                <div class="eachplayer">
+                    <h3 class="playername">Player 2 (Programmer)</h3>
+                    <div class="player_skill">
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="players row2">
+                <li></li>
+                <li></li>
+            </div> -->
+        </div>       
+    </div>
+    <div class="third_box">
+        <div class="heading">
+            <h2 class="headings_of_all"><span>M</span>y <span>E</span>ducation</h2>
+        </div>
+    </div>
+    <div class="timeline_box">
+        <div class="timeline"></div>
+        <div class="schools">
+            <div class="school_card">
+                <div class="circle"></div>
+                <!-- <img src="erhs.jpg" class="image_sc" alt="Eastern Railway High School"> -->
+                <div class="school_info">
+                    <h2>Eastern Railway High School</h2>
+                    <small>2018 - 2019</small>
+                    <p>I have passed my senior secondary (10th) standard from here in the batch of 2018-2019 with the percentage of 79%.</p>
+                </div>
+            </div>
+            <div class="school_card">
+                <div class="circle"></div>
+                <!-- <img src="gbs.jpg" class="image_sc" alt="Gyan Bharati School"> -->
+                <div class="school_info">
+                    <h2>Gyan Bharati School</h2>
+                    <small>2020 - 2021</small>
+                    <p>I have passed my higher secondary (12th) standard from here in the batch of 2020-2021 with the percentage of 71%.</p>
+                </div>
+            </div>
+            <div class="school_card">
+                <div class="circle"></div>
+                <!-- <img src="jisce.jpg" class="image_sc" alt="JIS College Of Engineering"> -->
+                <div class="school_info">
+                    <h2>JIS College Of Engineering</h2>
+                    <small>2022 - 2026</small>
+                    <p>Currently, I am pursuing my degree of B.Tech in Information Technology and studying in the year of 3rd in the batch of 2022-2026.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <div class="exp_head_box">
+        <div class="exp_head">
+            My Experience
+        </div>
+    </div>
+    <div class="exp_box">
+        <div class="content_box">
+            <div class="card">
+                <img src="palo.jpg" class="content_img">
+                <div class="content_text">
+                    <p>I have done my 1st AICTE Eduskills virtual internship on "Cybersecurity" during September - November 2023 supported by "Palo Alto Networks".</p>
+                </div>
+            </div>
+        </div>
+        <div class="content_box">
+            <div class="card">
+                <img src="aws.png" class="content_img">
+                <div class="content_text">
+                    <p>I have done my 2nd AICTE Eduskills virtual internship on "Cloud" during January - March 2024 supported by "AWS Academy".</p>
+                </div>
+            </div>    
+        </div>
+        <div class="content_box">
+            <div class="card">
+                <img src="blue.jpg" class="content_img">
+                <div class="content_text">
+                    <p>I have done my 3rd AICTE Eduskills virtual internship on "Intelligent Automation" during April - June 2024 supported by "SS&c Blue Prisms".</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exp_box">
+        <div class="content_box">
+            <div class="card">
+                <img src="ardent.jpeg" class="content_img">
+                <div class="content_text">
+                    <p>I have also completed the training of 30 hours on the subject "Internet Of Things (IOT)" and developed the project titled "Flood Monitoring System Using Thingspeak" during 11th of March to 15th of March 2024. </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="fourth_box">
+        <div class="heading_of_exp">
+            <h2 class="headings_of_all"><span>M</span>y <span>E</span>xperience</h2>
+        </div>
+        <div class="experience_box">
+            <div class="experiences" data-sound = "bubble.mp3">
+                <div class="frontside">
+                    <div class="certi_head">
+                        Google AI-ML
+                    </div>
+                    <div class="certi_date">
+                        July - Sept 2024
+                    </div>
+                    <div class="plusIcon">
+                        <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                    </div>
+                </div>
+                <div class="backside">
+                    <div class="certi_content">
+                        I have done my 4th AICTE Eduskills virtual internship on "Google AI-ML" during July - September 2024 supported by "Google".
+                    </div>
+                    <div class="certi_skill">
+                        <li>AI</li>
+                        <li>ML</li>
+                    </div>
+                </div>    
+            </div>
+            <div class="experiences" data-sound = "bubble.mp3">
+                <div class="frontside">
+                    <div class="certi_head">
+                        MTA Learning Private Limited
+                    </div>
+                    <div class="certi_date">
+                        July - July 2024    
+                    </div>
+                    <div class="plusIcon">
+                        <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                    </div>
+                </div>
+                <div class="certi_content">
+                    I have also completed the industrial training of course entitled as "Python with Django" and a earned a percentile of 9.76 whih was held from 15th July to 22nd July supported by "MTA Learning Private Limited".
+                </div>
+                <div class="certi_skill">
+                    <li>Python</li>
+                    <li>Django</li>
+                </div>
+            </div>
+            <div class="experiences" data-sound = "bubble.mp3">
+                <div class="frontside">
+                    <div class="certi_head">
+                        Intelligent Automation using SS&c Blue Prisms
+                    </div>
+                    <div class="certi_date">
+                        April - June 2024
+                    </div>
+                    <div class="plusIcon">
+                        <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                    </div>
+                </div>
+                <div class="certi_content">
+                    I have done my 3rd AICTE Eduskills virtual internship on "Intelligent Automation" during April - June 2024 supported by "SS&c Blue Prisms".
+                </div>
+                <div class="certi_skill">
+                    <li>BluePrism</li>
+                    <li>Automation</li>
+                </div>
+            </div>
+            <div class="experiences" data-sound = "bubble.mp3">
+               <div class="frontside">
+                <div class="certi_head">
+                    Industrial Training on Internet of Things (IOT)
+                </div>
+                <div class="certi_date">
+                    Mar - Mar 2024
+                </div>
+                <div class="plusIcon">
+                    <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                </div>
+               </div>
+                <div class="certi_content">
+                    I have also completed the training of 30 hours on the subject "Internet Of Things (IOT)" and developed the project titled "Flood Monitoring System Using Thingspeak" during 11th of March to 15th of March 2024.
+                </div>
+                <div class="certi_skill">
+                    <li>IOT</li>
+                    <li>Thingspeak</li>
+                </div>
+            </div>
+            <div class="experiences" data-sound = "bubble.mp3">
+                <div class="frontside">
+                    <div class="certi_head">
+                        Cloud Computing using AWS Academy
+                    </div>
+                    <div class="certi_date">
+                        Jan - Mar 2024
+                    </div>
+                    <div class="plusIcon">
+                        <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                    </div>
+                </div>
+                <div class="certi_content">
+                    I have done my 2nd AICTE Eduskills virtual internship on "Cloud" during January - March 2024 supported by "AWS Academy".
+                </div>
+                <div class="certi_skill">
+                    <li>Cloud</li>
+                    <li>AWS</li>
+                </div>
+            </div>
+            <div class="experiences" data-sound = "bubble.mp3">
+                <div class="frontside">
+                    <div class="certi_head">
+                        Cybersecurity using Palo Alto Networks
+                    </div>
+                    <div class="certi_date">
+                        Sept - Nov 2023
+                    </div>
+                    <div class="plusIcon">
+                        <i class="fa-solid fa-plus" onclick="ChangeIcon(this)"></i>
+                    </div>
+                </div>
+                <div class="certi_content">
+                    I have done my 1st AICTE Eduskills virtual internship on "Cybersecurity" during September - November 2023 supported by "Palo Alto Networks".
+                </div>
+                <div class="certi_skill">
+                    <li>Cybersecurity</li>
+                    <li>Security</li>
+                </div>
+            </div>
+            <!-- <div class="experiences start_stepping_stone">
+                <h3 class="start_step_glass">Starting Point</h3>
+                <small>Start your glass stepping experience from here</small>
+            </div> -->
+        </div>
+    </div>
+    
+    
+    <!-- <div class="project_section" id="project_section">
+        <div class="projects_head">
+            My Projects
+        </div>
+        <div class="proj_pic">
+            <img src="myprojects.gif" class="gif_in_project">
+            <div class="purple_box myproject">
+                <div class="exp_box myproj">
+                    <div class="content_box inmyproj" data-tilt data-tilt-glare>
+                        <a href="#" class="project">Project 1</a>
+                        <div class="project_name">Smart Blind Walking Stick</div>
+                    </div>
+                    <div class="content_box inmyproj" data-tilt data-tilt-glare>
+                        <a href="#" class="project">Project 2</a>
+                        <div class="project_name">Enhanced Vertical Windmill System</div>
+                    </div>
+                    <div class="content_box inmyproj" data-tilt data-tilt-glare>
+                        <a href="#" class="project">Project 3</a>
+                        <div class="project_name">Flood Monitoring System Using Thingspeak</div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp_box">
+                <div class="content_box inproj inmyproj" data-tilt data-tilt-glare>
+                    <a href="#" class="project">Project 4</a>
+                    <div class="project_name">Radar System Using Arduino</div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="fifth_box" id="project_section">
+        <div class="heading">
+            <h2 class="myeducation_heading"><span>M</span>y <span>P</span>rojects</h2>
+        </div>
+    </div>
+    <div class="fifth_projectSec">
+        <div class="projects">
+            <div class="projImg">
+                <img src="smartblindstick.png" class ="proj1Img">
+            </div>
+            <div class="projcontent">
+                <h4 class="eachproj_head">Smart Blind Walking Stick</h4>
+                <div class="eachproj_info">
+                    A project about Smart Blind Walking Stick
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projImg">
+                <img src="smartblindstick.png" class ="proj1Img">
+            </div>
+            <div class="projcontent">
+                <h4 class="eachproj_head">Enhanced Vertical Windmill System</h4>
+                <div class="eachproj_info">
+                    A project about Enhanced Vertical Windmill System
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projImg">
+                <img src="smartblindstick.png" class ="proj1Img">
+            </div>
+            <div class="projcontent">
+                <h4 class="eachproj_head">Radar System</h4>
+                <div class="eachproj_info">
+                    A project about Radar System
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <section class="project_section" id="project_section">
+        <h2 class="project_heading"><span>M</span>y <span>P</span>rojects</h2>
+        
+        <div class="project_list">
+            <div class="each_project">
+                <div class="left_img">
+                    <a href="https://github.com/PiyushKrGupta/Smart-Irrigation-System-Ecoirrigate-" class="project_link" target="_blank"><img src="ecoirrigate.png" class="ecoirrigate"></a>
+                </div>
+                <div class="right_content">
+                    <h3 class="project_name">Smart Irrigation System</h3>
+                    <small>Duration - March 2025</small>
+                    <p class="project_desc">This system fetches live weather data and prevents irrigation if rain is already on the way. No unnecessary watering, no wasted resources.</p>
+                    <ul class="project_tech">
+                        <li>ESP32</li>
+                        <li>SM sensor</li>
+                        <li>Relay Module</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="each_project">
+                <div class="left_img">
+                    <a href="https://github.com/PiyushKrGupta/NewsPatrol" class="project_link" target="_blank"><img src="newspatrol.png" class="ecoirrigate"></a>
+                </div>
+                <div class="right_content">
+                    <h3 class="project_name">Fake News Detector (NewSPatroL)</h3>
+                    <small>Duration - March 2025</small>
+                    <p class="project_desc">This project provides a real-time, AI-powered fact-checking solution that can be used by journalists, governments, and individuals to verify news before sharing. </p>
+                    <ul class="project_tech">
+                        <li>ReactJS</li>
+                        <li>Spring Boot</li>
+                        <li>Fact Check API</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="each_project">
+                <div class="left_img">
+                    <a href="https://github.com/PiyushKrGupta/Flood-Monitoring-System-Using-ThingSpeak" class="project_link" target="_blank"><img src="fms.png" class="ecoirrigate"></a>
+                </div>
+                <div class="right_content">
+                    <h3 class="project_name">Flood Monitoring System</h3>
+                    <small>Duration - March 2024</small>
+                    <p class="project_desc">The system can accurately measure water levels and provide timely alerts through visual indicators. </p>
+                    <ul class="project_tech">
+                        <li>ESP32</li>
+                        <li>Ultrasonic Sensor</li>
+                        <li>ThingSpeak</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="each_project">
+                <div class="left_img">
+                    <a href="#" class="project_link" target="_blank"><img src="evws.png" class="ecoirrigate"></a>
+                </div>
+                <div class="right_content">
+                    <h3 class="project_name">Enhanced Vertical Windmill System</h3>
+                    <small>Duration - November 2023</small>
+                    <p class="project_desc">The Enhanced Vertical Windmill System (EVWS) project aims to develop a more efficient and reliable vertical axis wind turbine (VAWT) system. </p>
+                    <ul class="project_tech">
+                        <li>Dynamo Motor</li>
+                        <li>Charge Controller</li>
+                        <li>DC Battery</li>
+                    </ul>
+                </div>
+            </div> 
+            <div class="each_project">
+                <div class="left_img">
+                    <a href="https://github.com/PiyushKrGupta/Smart-Blind-Walking-Stick" class="project_link" target="_blank"><img src="sbws.png" class="ecoirrigate"></a>
+                </div>
+                <div class="right_content">
+                    <h3 class="project_name">Smart Blind Walking Stick</h3>
+                    <small>Duration - June 2023</small>
+                    <p class="project_desc">The Smart Blind Stick aims to assist visually impaired individuals in navigating their surroundings safely and independently. </p>
+                    <ul class="project_tech">
+                        <li>Arduino UNO</li>
+                        <li>Ultrasonic Sensor</li>
+                        <li>Buzzer</li>
+                    </ul>
+                </div>
+            </div> 
+          
+          
+        </div>
+    </section>
+    <div class="game_introduce"><span>F</span>eeling bored from scrolling <span>?</span></div>
+    <section class="game">
+        <!-- Result display section -->
+        <div class="container">
+            <div class="result_field">
+                <!-- Container for user and BOT result images -->
+                <div class="result_images">
+                    <span class="user_result">
+                        <img src="rock.png" alt="User's choice image" />
+                    </span>
+                    <span class="bot_result">
+                        <img src="rock.png" alt="BOT's choice image" />
+                    </span>
+                </div>
+                <!-- Display the game result message -->
+                <div class="result">Let's Play!</div>
+            </div>
+            <!-- Options for user to choose from -->
+            <div class="option_images">
+                <span class="option_image">
+                    <img src="rock.png" alt="Rock image" />
+                    <p>Rock</p>
+                </span>
+                <span class="option_image">
+                    <img src="paper.png" alt="Paper image" />
+                    <p>Paper</p>
+                </span>
+                <span class="option_image">
+                    <img src="scissors.png" alt="Scissors image" />
+                    <p>Scissors</p>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="cv">
+        <div class="head_incv">
+            <p>Interested in collaborating or hiring me?</p>
+        </div>
+        <div class="incv">
+            <p>I am always eager to collaborate with exceptional individuals and seize every opportunity.</p>
+        </div>
+        <div class="download_cv_below">
+            <!-- <a href="Piyush_Gupta_Resume.pdf" target="_blank" class="download_button"><i class="fa-solid fa-download"></i>&nbsp;Download CV</a> -->
+            <a href="Piyush_Gupta_Resume.pdf" target="_blank">
+                <div class="download_cv down"><button class='glowing-btn cv_button soundButton' data-sound="click_sound.wav"><span class='glowing-txt'>R<span class='faulty-letter'>E</span>SUME</span></button></div>
+            </a> 
+        </div>
+    </div>
+
+    <div class="heading headtestimonial">
+        <h2 class="headings_of_all"><span>T</span>estimonials</h2>
+    </div>
+    <div class="testimonial_line">
+        <p>Views of the people that I have been worked with...</p>
+    </div>
+    
+    <!-- Swiper -->
+     <div class="testimonial_content">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="nabarun.png">
+                </div>
+                <div class="person_name">
+                    Nabarun Sarkar
+                </div>
+                <div class="person_role">
+                    Web3 Developer
+                </div>
+                <div class="test_comment">
+                You were an excellent leader in our Smart Blind Stick project, demonstrating both strong leadership and a calm, composed demeanor.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="pabitra.png">
+                </div>
+                <div class="person_name">
+                    Pabitra Gupta
+                </div>
+                <div class="person_role">
+                    Backend Developer (Spring Boot)
+                </div>
+                <div class="test_comment">
+                    Having worked with him on multiple projects, including the Smart Irrigation System and our prize-winning Windmill, I’ve always admired his innovative thinking.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="debanjan.png">
+                </div>
+                <div class="person_name">
+                    Debanajan Sarkar
+                </div>
+                <div class="person_role">
+                    Backend Developer (Spring Boot)
+                </div>
+                <div class="test_comment">
+                    He brought technical skills to both projects, helping develop the irrigation system and win 1st prize for the windmill project.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="arijit.png">
+                </div>
+                <div class="person_name">
+                    Arijit Nayak
+                </div>
+                <div class="person_role">
+                    Google Cloud Enthusiast
+                </div>
+                <div class="test_comment">
+                    He contributed creativity which were essential in developing the irrigation system and winning 1st prize for our windmill project.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="pritam.png">
+                </div>
+                <div class="person_name">
+                    Pritam Das
+                </div>
+                <div class="person_role">
+                    Web Developer
+                </div>
+                <div class="test_comment">
+                As a leader, you effectively managed everyone and also contributed great ideas for our Flood Monitoring System project.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="test_logo">
+                <i class="fa-solid fa-quote-left fa-bounce"></i>
+                </div>
+                <div class="test_pic">
+                <img src="kiran.png">
+                </div>
+                <div class="person_name">
+                    Kiran Samanta
+                </div>
+                <div class="person_role">
+                    ReactJS Developer
+                </div>
+                <div class="test_comment">
+                We have accomplished great work together, and you are truly a hardworking individual.
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- contact section -->
+    <section class="contact_section" id="contact_section">
+        <div class="get_in_touch_section">
+            <div class="threelines">
+                <div class="get_in_touch">
+                    <h2 class="headings_of_all"><span>G</span>et <span>I</span>n <span>T</span>ouch</h2> 
+                </div>
+                <div class="get_in_touch_quote">
+                    I’m excited to learn about your project.
+                </div>
+                <div class="get_in_touch_quote secondline">
+                    Ready to get started?
+                </div>
+            </div>
+            <!-- <div class="writing">
+                <img src="writing.gif" class="writing_gif">
+            </div> -->
+    
+        </div>
+        <div class="contact_box">
+            <div class="form">
+                <div class="sendmsg">
+                    <i class="fa-solid fa-envelope fa-spin"></i>
+                    send a message
+                </div>
+                 <!-- <form action="https://formsubmit.co/piyushkgupta13@gmail.com" method="POST"> -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+    
+                <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="985f5c39-ff81-4806-805e-47c4aaa375ca">
+                    <div class="form_content formname">
+                        <input type="text" name="Name" required placeholder="name" class="contentbox_inform">
+                    </div>
+                    <div class="form_content">
+                        <input type="email" name="Email" required placeholder="email address" class="contentbox_inform">
+                    </div>
+                    <div class="form_content">
+                        <input type="text" name="Subject" required placeholder="subject" class="contentbox_inform">
+                    </div>
+                    <div class="form_content">
+                        <textarea name="Message" required placeholder="message" class="contentbox_inform inform_msg"></textarea>
+                    </div>
+                    <div class="form_content">
+                        <input type="hidden" name="_captcha" value="false">
+                    </div>
+                    <div class="form_content">
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/thanks.html">
+                    </div>
+                    <div class="submission">
+                        <div class="sub_buttons">
+                            <button type="reset" class="buttons_of_form"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="sub_buttons">
+                            <button type="submit" class="buttons_of_form"><i class="fa-regular fa-circle"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer_section_inside_contact_section">
+            <div class="footer_box">
+                <div class="slogan">
+                    Living, learning, & leveling up one day at a time.
+                </div>
+                <ul class="social_icon">
+                        <li><a href="https://fb.com/piyushgupta1301" class="icon_div"><i class="fa-brands fa-facebook-f fa-spin"></i></a></li>
+                        <li><a href="https://instagram.com/piyushgupta1301" class="icon_div"><i class="fa-brands fa-instagram fa-spin"></i></a></li>
+                        <li><a href="https://linkedin.com/in/piyush-gupta-b6a3a8276" class="icon_div"><i class="fa-brands fa-linkedin-in fa-spin"></i></a></li>
+                        <li><a href="https://github.com/PiyushKrGupta" class="icon_div"><i class="fa-brands fa-github fa-spin"></i></a></li>
+                        <li><a href="https://leetcode.com/u/Piyush_LeetCode1/" class="icon_div"><i class="fa-solid fa-code fa-spin"></i></a></li>
+                </ul>
+                
+            </div>
+            <div class="footer_line handcraft">Handcrafted by me</div>
+            <div class="footer_line copyright">Copyright <span>&#169</span> 2025 Piyush Gupta </div>
+        </footer>
+    </section>
+    
+    <!-- <footer class="footer_section">
+        <div class="my_image_at_footer">
+                <img src="me_as_player.png" class="me_player">
+            </div> 
+        <div class="footer_box">
+            <div class="slogan">
+                Living, learning, & leveling up one day at a time.
+            </div>
+            <ul class="social_icon">
+                    <li><a href="https://fb.com/piyushgupta1301" class="icon_div"><i class="fa-brands fa-facebook-f fa-spin"></i></a></li>
+                    <li><a href="https://instagram.com/piyushgupta1301" class="icon_div"><i class="fa-brands fa-instagram fa-spin"></i></a></li>
+                    <li><a href="https://linkedin.com/in/piyush-gupta-b6a3a8276" class="icon_div"><i class="fa-brands fa-linkedin-in fa-spin"></i></a></li>
+                    <li><a href="https://github.com/PiyushKrGupta" class="icon_div"><i class="fa-brands fa-github fa-spin"></i></a></li>
+                    <li><a href="https://leetcode.com/u/Piyush_LeetCode1/" class="icon_div"><i class="fa-solid fa-code fa-spin"></i></a></li>
+            </ul>
+            
+        </div>
+        <div class="footer_line handcraft">Handcrafted by me</div>
+        <div class="footer_line copyright">Copyright &#169 2024 Piyush Gupta </div>
+    </footer> -->
+    <div class="custom-cursor"></div>
+
+
+    <script>
+        
+        // const toggle = document.getElementById('toggle');
+        // const body = document.querySelector('body');
+        // const about = document.querySelector('.about')
+        // toggle.onclick = function(){
+        //     toggle.classList.toggle('active')
+        //     body.classList.toggle('active')
+        //     about.classList.toggle('active')
+        // }
+
+        const toggle = document.getElementById('toggle');
+        const body = document.querySelector('body');
+        const about = document.querySelector('.about');
+
+        // Load saved mode from localStorage
+        window.onload = function() {
+            const isActive = localStorage.getItem('darkMode') === 'enabled';
+            if (isActive) {
+                toggle.classList.add('active');
+                body.classList.add('active');
+                about.classList.add('active');
+            }
+        }
+
+        // Toggle classes and save mode to localStorage
+        toggle.onclick = function() {
+            toggle.classList.toggle('active');
+            body.classList.toggle('active');
+            about.classList.toggle('active');
+
+            // Save the current state in localStorage
+            if (body.classList.contains('active')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.removeItem('darkMode');
+            }
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        });
+    </script>
+
+    <!-- for vanilla effect -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
